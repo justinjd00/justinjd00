@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!-- @START_ANIME_GIF -->
 <p align="center"><img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" alt="random anime gif" width="600px"></p>
 <!-- @END_ANIME_GIF -->
