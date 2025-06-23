@@ -34,6 +34,7 @@ jobs:
           git config user.email "justinjd00@users.noreply.github.com"
           git add README.md
           git commit -m "chore: Update daily random anime gif" || echo "No changes to commit"
+          git pull --rebase origin main
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
