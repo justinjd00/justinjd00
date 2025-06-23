@@ -9,7 +9,6 @@ START_MARKER = "@START_ANIME_GIF"
 END_MARKER = "@END_ANIME_GIF"
 
 def get_random_gif_url():
-    """Fetches a random GIF URL from Giphy."""
     url = f"https://api.giphy.com/v1/gifs/random?api_key={API_KEY}&tag={SEARCH_TAG}&rating=g"
     response = requests.get(url)
     response.raise_for_status()
@@ -17,24 +16,22 @@ def get_random_gif_url():
     return data['data']['images']['original']['url']
 
 def update_readme_with_gif(gif_url):
-    """Updates the README.md file with the new GIF URL."""
     with open(README_FILE, "r", encoding="utf-8") as f:
         content = f.read()
 
     new_gif_block = f'\n<p align="center"><img src="{gif_url}" alt="random anime gif" width="600px"></p>\n'
     
-    pattern = re.compile(rf"{START_MARKER}(.*?){END_MARKER}", re.DOTALL)
+    pattern = re.compile(rf"({re.escape(START_MARKER)})(.*?)({re.escape(END_MARKER)})", re.DOTALL)
     
-    if pattern.search(content):
-        updated_content = pattern.sub(f"{START_MARKER}{new_gif_block}{END_MARKER}", content)
+    match = pattern.search(content)
+
+    if match:
+        updated_content = pattern.sub(rf"\g<1>{new_gif_block}\g<3>", content)
+        
+        with open(README_FILE, "w", encoding="utf-8") as f:
+            f.write(updated_content)
     else:
-
-        print("Warning: START_ANIME_GIF / END_ANIME_GIF markers not found. Appending GIF after title.")
-        updated_content = content.replace(new_gif_block)
-
-
-    with open(README_FILE, "w", encoding="utf-8") as f:
-        f.write(updated_content)
+        print(f"Warning: Markers '{START_MARKER}' and '{END_MARKER}' not found in '{README_FILE}'. README will not be updated.")
 
 if __name__ == "__main__":
     try:
