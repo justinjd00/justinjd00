@@ -30,8 +30,8 @@ jobs:
 
       - name: Commit and Push changes
         run: |
-          git config user.name "Justin Dewitz"
-          git config user.email "justinjd00@gmail.com@users.noreply.github.com"
+          git config user.name "justinjd00"
+          git config user.email "justinjd00@users.noreply.github.com"
           git add README.md
           git commit -m "chore: Update daily random anime gif" || echo "No changes to commit"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
