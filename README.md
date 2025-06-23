@@ -1,5 +1,5 @@
 <!-- @START_ANIME_GIF -->
-<p align="center"><img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" alt="random anime gif" width="600px"></p>
+<p align="center"><img src="https://media4.giphy.com/media/1yjZUUhd376etbZYLg/giphy.gif?cid=aa3c7a8534y5m83s28iklafhnr1ekusidd6pficn56dhwara&ep=v1_gifs_random&rid=giphy.gif&ct=g" alt="random anime gif" width="600px"></p>
 <!-- @END_ANIME_GIF -->
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=justinjd00&label=Profil-Besuche&color=0e75b6&style=flat" alt="justinjd00" /> </p>
@@ -8,7 +8,7 @@
 
 ---
 
-### Sprachen und Tools, mit denen ich gerne arbeite:
+### Languages and tools I enjoy working with:
 
 
 <p align="left">
@@ -53,7 +53,7 @@
 ---
 
 
-### Meine GitHub Statistiken:
+### My GitHub Stats:
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=justinjd00&show_icons=true&locale=en&theme=dark" alt="justinjd00" /></p>
 
