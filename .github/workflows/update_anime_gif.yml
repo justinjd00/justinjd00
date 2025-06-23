@@ -1,0 +1,37 @@
+name: Update Daily Anime GIF
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-gif:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run GIF update script
+        run: python .github/scripts/update_readme_gif.py
+        env:
+          GIPHY_API_KEY: ${{ secrets.GIPHY_API_KEY }}
+
+      - name: Commit and Push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: Update daily random anime gif" || echo "No changes to commit"
+          git push
