@@ -1,5 +1,6 @@
-@START_ANIME_GIF
-@END_ANIME_GIF
+<!-- @START_ANIME_GIF -->
+<p align="center"><img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" alt="random anime gif" width="600px"></p>
+<!-- @END_ANIME_GIF -->
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=justinjd00&label=Profil-Besuche&color=0e75b6&style=flat" alt="justinjd00" /> </p>
 
