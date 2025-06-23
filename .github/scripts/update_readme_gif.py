@@ -4,7 +4,7 @@ import re
 import sys
 
 API_KEY = os.environ.get('GIPHY_API_KEY')
-SEARCH_TAG = "anime"
+SEARCH_TAG = "welcome anime"
 README_FILE = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "README.md")
 START_MARKER = "<!-- @START_ANIME_GIF -->"
 END_MARKER = "<!-- @END_ANIME_GIF -->"
