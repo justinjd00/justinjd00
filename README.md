@@ -8,7 +8,7 @@
 
 ---
 
-### Sprachen und Tools, mit denen ich gerne arbeite:
+### Languages and tools I enjoy working with:
 
 
 <p align="left">
@@ -53,7 +53,7 @@
 ---
 
 
-### Meine GitHub Statistiken:
+### My GitHub Stats:
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=justinjd00&show_icons=true&locale=en&theme=dark" alt="justinjd00" /></p>
 
