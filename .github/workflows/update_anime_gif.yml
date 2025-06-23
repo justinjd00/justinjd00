@@ -2,7 +2,7 @@ name: Update Daily Anime GIF
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '*/6 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -30,8 +30,10 @@ jobs:
 
       - name: Commit and Push changes
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "Justin Dewitz"
+          git config user.email "justinjd00@gmail.com@users.noreply.github.com"
           git add README.md
           git commit -m "chore: Update daily random anime gif" || echo "No changes to commit"
-          git push
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
