@@ -1,5 +1,5 @@
 <!-- @START_ANIME_GIF -->
-<p align="center"><img src="https://media3.giphy.com/media/Y7tMc0EvjpB9mQaPW9/giphy.gif?cid=aa3c7a851ocz5d0ic11sde4w8vik6p1agncy6cin1mzzjkgz&ep=v1_gifs_random&rid=giphy.gif&ct=g" alt="random anime gif" width="600px"></p>
+<p align="center"><img src="https://media1.giphy.com/media/l1J3SvnlXA2jLgUeI/giphy.gif?cid=aa3c7a854dfhvnbqfhfxabu3xc6tnxz8ixtwboqoirr2k3wn&ep=v1_gifs_random&rid=giphy.gif&ct=g" alt="random anime gif" width="600px"></p>
 <!-- @END_ANIME_GIF -->
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=justinjd00&label=Profil-Besuche&color=0e75b6&style=flat" alt="justinjd00" /> </p>
